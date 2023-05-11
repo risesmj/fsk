@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from math import pi
 from scipy.fft import fft, fftfreq
-import pandas as pd
 import binascii
 
 # -------------------=FUNÇÕES=-------------------
@@ -61,7 +60,7 @@ plt.xlim([0, 0.001])
 plt.show()
 
 # espectro do sinal
-T = 0.001  # calcular o período do sinal 0.001 -> 1/T = 1000
+T = 0.1 / Fs
 N = signal.size
 
 # aplica o fourier para converter o sinal temporal em sinal de frequência
